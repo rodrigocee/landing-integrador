@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -8,22 +8,225 @@
     <title>Document</title>
     <link rel="stylesheet" href="./assets/styles.css">
     <link rel="stylesheet" href="./assets/mediaqueries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <header>
-        <nav>
-            <ul>
+        <img src="./assets/logos/logo-hojas.png" alt="La Yerbatera" class="header-logo">
+        <h1><a href="#">LA YERBATERA</a></h1>
+        <nav class="navbar">
+            <label for="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <input type="checkbox" name="menu-toggle" id="menu-toggle">
+            <ul class="navbar-list">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">Beneficios</a></li>
+                <li><a href="#cards">Nuestros Productos</a></li>
+                <li><a href="#contacto">Contactanos</a></li>
             </ul>
         </nav>
+        <div class="login-section">
+            <h3 class="login-button signin"><a href="./register.html">Creá tu cuenta</a></h3>
+            <h3 class="login-button login"><a href="./login.html">Iniciar sesión</a></h3>
+        </div>
+        <div class="cart">
+            <label for="cart-toggle" class="cart-icon">
+                <i class="fa-solid fa-bag-shopping"></i>
+            </label>
+            <input type="checkbox" name="cart-toggle" id="cart-toggle">
+            <div class="cart-list">
+                <h3>Tus compras</h3>
+            </div>
+        </div>
     </header>
+    <main>
+        <section id="hero">
+            <div class="hero-info">
+                <img src="./assets/logos/logo-yerbatera.png" alt="">
+                <p>Te acercamos los mejores productos para disfrutar de esta experiencia tan nuestra. Al comenzar el
+                    día, en el trabajo, en el descanso, al atardecer. Que nunca te falte un buen mate.</p>
+                <p class="hero-info-link">Visita <a href="#">nuestra tienda.</a></p>
+            </div>
+            <div class="hero-img">
+                <img src="./assets/images/img-hero-mate.jpg" alt="yerbatal">
+            </div>
+        </section>
+        <section id="about">
+            <div class="about-card">
+                <div class="about-card-icon">
+                    <i class="fa-solid fa-truck-fast"></i>
+                </div>
+                <h1 class="about-card-tittle">
+                    Envios
+                </h1>
+                <p class="about-card-text">
+                    Enviamos a todo el país.
+                    Bonificado en compras superiores a $6000.
+                </p>
+            </div>
+            <div class="about-card">
+                <div class="about-card-icon">
+                    <i class="fa-solid fa-money-check-dollar"></i>
+                </div>
+                <h1 class="about-card-tittle">
+                    Medios de pago
+                </h1>
+                <p class="about-card-text">
+                    Aceptamos tarjeta de débito, crédito o
+                    transferencias.
+                </p>
+            </div>
+            <div class="about-card">
+                <div class="about-card-icon">
+                    <i class="fa-solid fa-credit-card"></i>
+                </div>
+                <h1 class="about-card-tittle">
+                    En cuotas
+                </h1>
+                <p class="about-card-text">
+                    Hasta 6 cuotas sin interés con todas las tarjetas
+                    en todos nuestros productos.
+                </p>
+            </div>
+            <div class="about-card">
+                <div class="about-card-icon">
+                    <i class="fa-solid fa-store"></i>
+                </div>
+                <h1 class="about-card-tittle">
+                    Retiro por local
+                </h1>
+                <p class="about-card-text">
+                    Podés acercarte a nuestro local de Lunes a Sábado de 9 a 18hs.
+                </p>
+            </div>
+        </section>
+        <section id="products">
+            <h2>Nuestros productos</h2>
+            <div class="product-cards">
+                <div class="product">
+                    <img src="./assets/images/D_NQ_NP_700729-MLA45689640310_042021-O.webp" alt="yerba nobleza gaucha">
+                    <div class="product-info">
+                        <h4>Yerba Nobleza Gaucha</h4>
+                        <p>Paq. x 500g</p>
+                    </div>
+                    <div class="product-price">
+                        <span class="product-list-price">400$</span>
+                        <div class="product-price-offer">
+                            <span class="product-offer">360$</span>
+                            <span class="product-discount">10% Oferta!</span>
+                        </div>
+                    </div>
+                    <div class="product-buttons">
+                        <div class="add-to-cart button">
+                            <span>Agregar al carrito</span>
+                        </div>
+                        <div class="buy-now button">
+                            <span>Comprar</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="./assets/images/D_NQ_NP_711654-MLA50607559719_072022-O.webp"
+                        alt="yerba nobleza gaucha suave">
+                    <div class="product-info">
+                        <h4>Yerba Nobleza Gaucha Suave</h4>
+                        <p>Paq. x 1kg</p>
+                    </div>
+                    <div class="product-price">
+                        <span class="product-list-price">1000$</span>
+                        <div class="product-price-offer">
+                            <span class="product-offer">900$</span>
+                            <span class="product-discount">10% Oferta!</span>
+                        </div>
+                    </div>
+                    <div class="product-buttons">
+                        <div class="add-to-cart button">
+                            <span>Agregar al carrito</span>
+                        </div>
+                        <div class="buy-now button">
+                            <span>Comprar</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="./assets/images/D_NQ_NP_783156-MLA50714546886_072022-O.webp" alt="yerba playadito">
+                    <div class="product-info">
+                        <h4>Yerba Playadito</h4>
+                        <p>Paq. x 1kg</p>
+                    </div>
+                    <div class="product-price">
+                        <span class="product-list-price">1200$</span>
+                        <div class="product-price-offer">
+                            <span class="product-offer">1020$</span>
+                            <span class="product-discount">15% Oferta!</span>
+                        </div>
+                    </div>
+                    <div class="product-buttons">
+                        <div class="add-to-cart button">
+                            <span>Agregar al carrito</span>
+                        </div>
+                        <div class="buy-now button">
+                            <span>Comprar</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="./assets/images/D_NQ_NP_813618-MLA46121646793_052021-O.webp" alt="yerba union">
+                    <div class="product-info">
+                        <h4>Yerba Union</h4>
+                        <p>Paq. x 500g</p>
+                    </div>
+                    <div class="product-price">
+                        <span class="product-list-price">500$</span>
+                        <div class="product-price-offer">
+                            <span class="product-offer">450$</span>
+                            <span class="product-discount">10% Oferta!</span>
+                        </div>
+                    </div>
+                    <div class="product-buttons">
+                        <div class="add-to-cart button">
+                            <span>Agregar al carrito</span>
+                        </div>
+                        <div class="buy-now button">
+                            <span>Comprar</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="./assets/images/D_NQ_NP_838351-MLA49524433504_032022-O.webp" alt="yerba canarias">
+                    <div class="product-info">
+                        <h4>Yerba Especial</h4>
+                        <p>Paq. x 1kg</p>
+                    </div>
+                    <div class="product-price">
+                        <span class="product-list-price">1500$</span>
+                        <div class="product-price-offer">
+                            <span class="product-offer">1275$</span>
+                            <span class="product-discount">15% Oferta!</span>
+                        </div>
+                    </div>
+                    <div class="product-buttons">
+                        <div class="add-to-cart button">
+                            <span>Agregar al carrito</span>
+                        </div>
+                        <div class="buy-now button">
+                            <span>Comprar</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="store-button">
+                <a href="#">Ver más</a>
+            </div>
+        </section>
+    </main>
+    <footer>
 
-    <body>
-        <main>
-            
-        </main>
-    </body>
-
+    </footer>
 </body>
 
 </html>
