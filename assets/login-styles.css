@@ -19,7 +19,6 @@
     list-style: none;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
-    /* border: 1px solid black; */
 }
 
 html {
@@ -56,8 +55,6 @@ header h1 a {
     font-weight: 400;
     letter-spacing: .3rem;
 }
-
-/*  */
 
 main {
     height: 100vh;
@@ -125,8 +122,6 @@ input[type=button] {
     font-weight: 500;
 
 }
-
-/*  */
 
 footer {
     width: 100%;
